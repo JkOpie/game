@@ -30,10 +30,21 @@ function timer(timeleft){
         url: 'verify_score.php',
         data: {
             'score' : score,
+            'totalTime' : totalTime,
         }, // serializes the form's elements.
         success: function(data) { 
-          if(data){
-            console.log(JSON.parse(data));
+          
+          data = JSON.parse(data);
+         
+          if(data.count_within_range_or_above_max){
+              console.log( $('input[type="text"][name="score"]'), score);
+              $('input[type="text"][name="score"]').val(data.score);
+              $('input[type="hidden"][name="score"]').val(data.score);
+
+              $('input[type="text"][name="time"]').val(data.totalTime);
+              $('input[type="hidden"][name="time"]').val(data.totalTime);
+
+              $('#exampleModal').modal('show');
           }
          
         }

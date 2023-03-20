@@ -27,7 +27,7 @@
         </div>
         <div class="text-center">
           <h4 class="mb-3">Timer: <span id="timer">0.00</span></h4>
-          <button class="btn  btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Modal</button>
+          <!-- <button class="btn  btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Modal</button> -->
           <button id="start" class="btn  btn-outline-primary">Start</button>
           <button id="restart" class="btn btn-outline-secondary">Restart</button>
         </div>
@@ -39,7 +39,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Top 25 winners</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Congratulation! You are in top 25 scores!</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
